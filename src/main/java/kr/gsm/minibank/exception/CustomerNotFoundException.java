@@ -1,5 +1,7 @@
 package kr.gsm.minibank.exception;
 
-public class CustomerNotFoundException {
-public static void main(String[]args)
+public class CustomerNotFoundException extends RuntimeException {
+    public CustomerNotFoundException(Long id){
+        super("고객을 찾을 수 없습니다. id=" +id);
+    }
 }

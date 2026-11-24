@@ -1,5 +1,8 @@
 package kr.gsm.minibank.repository;
 
-public class CustomerRepository {
-public static void main(String[]args)
+import kr.gsm.minibank.domain.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
+
 }
